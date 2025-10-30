@@ -5,38 +5,51 @@ export const WORKFLOW_ID =
 
 export const CREATE_SESSION_ENDPOINT = "/api/create-session";
 
-// === 🧠 Prompts rapides visibles sur l’écran d’accueil ===
+// === 🌱 Prompts rapides (écran d’accueil) ===
 export const STARTER_PROMPTS: StartScreenPrompt[] = [
   {
-    label: "Que penses-tu de Dark Vador ?",
-    prompt: "Que penses-tu de Dark Vador, maître Yoda ?",
+    label: "Respire un instant",
+    prompt:
+      "Guide-moi dans une courte respiration apaisante, pour relâcher la tension et retrouver ma présence.",
   },
   {
-    label: "Et Chuck Norris ?",
-    prompt: "Chuck Norris, que dis-tu, Yoda ?",
+    label: "Reviens au calme",
+    prompt:
+      "Aide-moi à me recentrer avec douceur. Trois étapes simples pour apaiser l’esprit et relâcher le corps.",
+  },
+  {
+    label: "Commencer la journée en paix",
+    prompt:
+      "Propose-moi une routine matinale légère et lumineuse pour bien démarrer la journée, même si j’ai peu de temps.",
+  },
+  {
+    label: "Alléger le stress",
+    prompt:
+      "J’ai une montée de stress. Offre-moi une micro-pratique immédiate pour retrouver sérénité et ancrage.",
   },
 ];
 
 // === 💬 Texte par défaut dans la barre de saisie ===
-export const PLACEHOLDER_INPUT = "Une idée, tu as ? Parle, tu dois.";
+export const PLACEHOLDER_INPUT =
+  "Une pause, un souffle, une intention… Que souhaites-tu apaiser ou nourrir ?";
 
 // === 👋 Message d’accueil du chatbot ===
 export const GREETING =
-  "Hmm... Bienvenue chez Dreem, jeune créatif tu es. L’agent Yoda je suis. Inspiration, humour et sagesse en une phrase, tu recevras.";
+  "Bienvenue chez Coach Zen 🌿\n\nRespire doucement… ici, tout ralentit. Chaque mot t’invite à te recentrer, à retrouver ton souffle, et à avancer avec clarté et douceur.";
 
-// === 🎨 Thème du chat ===
+// === 🎨 Thème du chat (harmonieux et apaisant) ===
 export const getThemeConfig = (theme: ColorScheme): ThemeOption => ({
   color: {
     grayscale: {
-      hue: 250,
-      tint: 6,
-      shade: theme === "dark" ? -1 : -4,
+      hue: 200,
+      tint: 8,
+      shade: theme === "dark" ? -2 : -4,
     },
     accent: {
-      primary: theme === "dark" ? "#FF7FE8" : "#24FF8C", // Couleurs Dreem
+      primary: theme === "dark" ? "#A5C9CA" : "#7AD1C0", // tons bleu-vert doux
       level: 1,
     },
   },
   radius: "round",
-  // chatkit.studio/playground pour explorer les options
+  // Palette inspirée du calme : verts tendres et bleus d’eau
 });
