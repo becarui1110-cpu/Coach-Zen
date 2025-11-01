@@ -28,7 +28,8 @@
 }
 
 body {
-  background: var(--background);
+  background: url('https://raw.githubusercontent.com/becarui1110-cpu/Coach-Zen/main/app/zen.png') no-repeat center center fixed;
+  background-size: cover;
   color: var(--foreground);
   font-family: var(--font-sans);
 }
